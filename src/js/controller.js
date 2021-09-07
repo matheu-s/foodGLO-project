@@ -25,7 +25,7 @@ const getRecipe = async function () {
     await model.loadRecipe(id); // it does not return a value, simply changes the value of state.recipe
 
     //Get more infos from Spoonacular API
-    await model.calculateInfo(model.state.recipe.ingredients);
+    // await model.calculateInfo(model.state.recipe.ingredients);
 
     //3. Render recipe
     recipeView.render(model.state.recipe); // passing the value to the view
