@@ -239,7 +239,7 @@ export const calculateInfo = async function (ingredientsArr) {
       ing.cost = data[1];
     }
   } catch (err) {
-    console.error(error);
+    console.error(err);
   }
 };
 
